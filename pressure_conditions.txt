@@ -1,0 +1,61 @@
+--- Gastite (gastite_csst.txt) ---
+TABLE = "gastite_7-1"     # NG, 0.5 PSI inlet, 0.5 inWC drop
+TABLE = "gastite_7-2"     # NG, 0.5 PSI inlet, 1.0 inWC drop
+TABLE = "gastite_7-3"     # NG, 0.5 PSI inlet, 1.5 inWC drop
+TABLE = "gastite_7-4"     # NG, 0.5 PSI inlet, 2.0 inWC drop
+TABLE = "gastite_7-5"     # NG, 0.5 PSI inlet, 3.0 inWC drop
+TABLE = "gastite_7-6"     # NG, 0.5 PSI inlet, 4.0 inWC drop
+TABLE = "gastite_7-7"     # NG, 0.5 PSI inlet, 5.0 inWC drop
+TABLE = "gastite_7-8"     # NG, 0.5 PSI inlet, 6.0 inWC drop
+TABLE = "gastite_7-9"     # NG, 1.0 PSI inlet, 13.0 inWC drop
+TABLE = "gastite_7-10"    # NG, 2.0 PSI inlet, 1.0 PSI drop
+TABLE = "gastite_7-11"    # NG, 5.0 PSI inlet, 3.5 PSI drop
+TABLE = "gastite_7-12"    # NG, 10.0 PSI inlet, 7.0 PSI drop
+TABLE = "gastite_7-13"    # propane, 0.5 PSI inlet, 0.5 inWC drop
+TABLE = "gastite_7-14"    # propane, 0.5 PSI inlet, 1.0 inWC drop
+TABLE = "gastite_7-15"    # propane, 0.5 PSI inlet, 2.0 inWC drop
+TABLE = "gastite_7-16"    # propane, 0.5 PSI inlet, 2.5 inWC drop
+TABLE = "gastite_7-17"    # propane, 0.5 PSI inlet, 3.0 inWC drop
+TABLE = "gastite_7-18"    # propane, 2.0 PSI inlet, 1.0 PSI drop
+TABLE = "gastite_7-19"    # propane, 5.0 PSI inlet, 3.5 PSI drop
+TABLE = "gastite_7-20"    # propane, 10.0 PSI inlet, 7.0 PSI drop
+
+--- Parflex (csst_parflex.txt) ---
+TABLE = "parflex_1"       # NG, 0.5 psi inlet, 0.5 inWC drop
+TABLE = "parflex_2"       # NG, 0.5 psi inlet, 1.0 inWC drop
+TABLE = "parflex_3"       # NG, 0.5 psi inlet, 1.5 inWC drop
+TABLE = "parflex_4"       # NG, 0.5 psi inlet, 2.0 inWC drop
+TABLE = "parflex_5"       # NG, 0.5 psi inlet, 3.0 inWC drop
+TABLE = "parflex_6"       # NG, 0.5 psi inlet, 4.0 inWC drop
+TABLE = "parflex_7"       # NG, 0.5 psi inlet, 5.0 inWC drop
+TABLE = "parflex_8"       # NG, 0.5 psi inlet, 6.0 inWC drop
+TABLE = "parflex_9"       # NG, 2.0 psig inlet, 1.0 psi drop
+TABLE = "parflex_10"      # NG, 2.0 psig inlet, 1.5 psi drop
+TABLE = "parflex_11"      # NG, 5.0 psig inlet, 3.5 psi drop
+TABLE = "parflex_12"      # propane, 0.5 psi inlet, 0.5 inWC drop
+TABLE = "parflex_13"      # propane, 0.5 psi inlet, 2.5 inWC drop
+TABLE = "parflex_14"      # propane, 2.0 psig inlet, 1.0 psi drop
+TABLE = "parflex_15"      # propane, 2.0 psig inlet, 1.5 psi drop
+TABLE = "parflex_16"      # propane, 5.0 psig inlet, 3.5 psi drop
+
+--- TracPipe (csst_tracpipe.txt) ---
+TABLE = "tracpipe_N-1"    # NG, low pressure, 0.5 inWC drop
+TABLE = "tracpipe_N-2"    # NG, medium pressure, 1.0 inWC drop
+TABLE = "tracpipe_N-3"    # NG, elevated 2 psig, 1.0 psi drop
+TABLE = "tracpipe_N-4"    # NG, elevated 5 psig, 3.5 psi drop
+TABLE = "tracpipe_N-5"    # NG, elevated 20 psig, 10.0 psi drop
+TABLE = "tracpipe_P-1"    # propane, low pressure, 1.0 inWC drop
+TABLE = "tracpipe_P-2"    # propane, elevated 2 psig, 1.0 psi drop
+TABLE = "tracpipe_P-3"    # propane, elevated 20 psig, 10.0 psi drop
+
+--- Parker Hannifin (flow_capacity_data.txt) - same 5 conditions for every pipe size ---
+TABLE = "parker_0.5inwc"    # 0.25 psi inlet, 0.5 inWC drop
+TABLE = "parker_3inwc"      # 0.36 psi inlet, 3 inWC drop
+TABLE = "parker_6inwc"      # 0.50 psi inlet, 6 inWC drop
+TABLE = "parker_41.5inwc"   # 2.00 psi inlet, 41.5 inWC drop - SUSPECT for 3/4 inch (Fix 4)
+TABLE = "parker_96.9inwc"   # 5.00 psi inlet, 96.9 inWC drop
+
+--- CSA/ANSI LC 1:23 (csa_ansi_tables.txt) ---
+TABLE = "csa_1a"     # NG, 0.5 psi inlet, 0.5 inWC drop
+TABLE = "csa_1b"     # NG, 2.0 psi inlet, 1.5 psi drop
+TABLE = "csa_1c"     # NG, 5.0 psi inlet, 3.5 psi drop

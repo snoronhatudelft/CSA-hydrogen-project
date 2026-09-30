@@ -1,0 +1,131 @@
+# ============================================================
+#  CSST Flow Capacity Data – Parker Hannifin
+#  Source: "typical CSST flow data file.pdf"
+#  Testing standard: CSA LC-1
+#  All flows in SCFH (65 °F, 29.92 in Hg, specific gravity 0.60)
+#  Transcribed from handwritten test sheets (scanned PDFs)
+#  Note: values marked [?] were difficult to read from the scan
+# ============================================================
+#
+# EHD = Effective Hydraulic Diameter (dimensionless AGA/CSA size index; the
+#       sheets write it as a bare number with no units - NOT mm)
+#
+# TABLE 1  –  Flow Capacity Data Chart (CSST coil)
+#   Each row:  inlet_psi, inlet_inWC, drop_psi, drop_inWC,
+#              flow_30ft, flow_50ft, flow_80ft, flow_100ft,
+#              flow_150ft, flow_200ft, flow_Xft
+#   where X is the maximum test length for that pipe size.
+#
+# TABLE 2  –  Flow Loss in Straight Tubing (30 ft length)
+#   Each row:  inlet_psi, inlet_inWC, drop_psi, drop_inWC, flow_scfh
+# ============================================================
+
+
+[PIPE 3/8 inch]
+vendor      = Parker Hannifin
+date        = 1996-05-30
+ehd      = 13
+id_mm       =  13*25.4/32 #9.525
+# Maximum test length for this sample is 240 ft (not 250 ft)
+lengths_ft  = 30, 50, 80, 100, 150, 200, 240
+
+TABLE1
+# inlet_psi, inlet_inWC, drop_psi, drop_inWC, 30ft, 50ft, 80ft, 100ft, 150ft, 200ft, 240ft
+0.25,   7.0,   0.0181,  0.50,   22.68,  18.11,  11.96,   9.62,   6.74,   4.72,   4.59
+0.36,  10.0,   0.11,    3.00,   49.27,  39.83,  32.68,  30.11,  28.52,  24.83,  22.60
+0.50,  14.0,   0.22,    6.00,   64.10,  52.78,  45.19,  39.72,  33.23,  30.70,  30.15
+2.00,  55.4,   1.50,   41.50,  151.46, 120.35,  96.28,  83.64,  73.33,  65.84,  61.46
+5.00, 138.4,   3.50,   96.90,  241.62, 190.90, 159.80, 140.51, 117.87, 101.87,  92.97
+END_TABLE1
+
+TABLE2
+# inlet_psi, inlet_inWC, drop_psi, drop_inWC, flow_scfh
+0.25,   7.0,   0.018,   0.50,   25.79
+0.36,  10.0,   0.11,    3.00,   49.95
+0.50,  14.0,   0.22,    6.00,   64.27
+2.00,  55.4,   1.50,   41.50,  150.11
+5.00, 138.4,   3.50,   96.90,  243.89
+END_TABLE2
+
+
+[PIPE 1/2 inch]
+vendor      = Parker Hannifin
+date        = 1996-05-23
+ehd      = 18
+id_mm       = 18*25.4/32 #12.7
+lengths_ft  = 30, 50, 80, 100, 150, 200, 250
+
+TABLE1
+# inlet_psi, inlet_inWC, drop_psi, drop_inWC, 30ft, 50ft, 80ft, 100ft, 150ft, 200ft, 250ft
+0.25,   7.0,   0.0181,  0.50,    54.32,  46.13,  36.55,  31.23,  23.87,  19.90,  16.87
+0.36,  10.0,   0.11,    3.00,   116.38,  97.82,  78.92,  71.11,  58.79,  53.99,  48.96
+0.50,  14.0,   0.22,    6.00,   157.94, 129.66, 106.01,  95.47,  80.87,  71.33,  65.04
+2.00,  55.4,   1.50,   41.50,   400.46, 315.87, 247.78, 225.08, 182.51, 162.26, 149.97
+5.00, 138.4,   3.50,   96.90,   652.11, 514.2, 400.82, 354.32, 291.35, 256.04, 238.33
+END_TABLE1
+
+TABLE2
+# inlet_psi, inlet_inWC, drop_psi, drop_inWC, flow_scfh
+0.25,   7.0,   0.0181,  0.50,    54.63
+0.36,  10.0,   0.11,    3.00,   118.26
+0.50,  14.0,   0.22,    6.00,   155.78
+2.00,  55.4,   1.50,   41.50,   398.92
+5.00, 138.4,   3.50,   96.90,   646.51
+END_TABLE2
+
+
+[PIPE 3/4 inch]
+vendor      = Parker Hannifin
+date        = 1996-06-04
+ehd      = 23
+id_mm      = 23*25.4/32 #19.05
+lengths_ft  = 30, 50, 80, 100, 150, 200, 250
+
+TABLE1
+# inlet_psi, inlet_inWC, drop_psi, drop_inWC, 30ft, 50ft, 80ft, 100ft, 150ft, 200ft, 250ft
+0.25,   7.0,   0.0181,  0.50,    80.25,  74.24,  62.82,  59.49,  52.82,  45.28,  41.76
+0.36,  10.0,   0.11,    3.00,   211.80, 185.19, 138.73, 132.79, 112.77,  99.67,  90.64
+0.50,  14.0,   0.22,    6.00,   298.26, 234.55, 186.65, 178.21, 151.44, 134.59, 120.78
+# SUSPECT ROW: residuals +20/+25/-31% at 150/200/250 ft; half-struck mark
+# on original sheet at 151.30 SCFH. Treat as suspect pending lab records.
+2.00,  55.4,   1.50,   41.50,   879.48, 592.39, 470.63, 451.14, 372.98, 319.19, 151.30
+5.00, 138.4,   3.50,   96.90,  1429.87, 1239.35, 771.46, 736.96, 602.76, 519.09, 472.65
+END_TABLE1
+
+TABLE2
+# inlet_psi, inlet_inWC, drop_psi, drop_inWC, flow_scfh
+0.25,   7.0,   0.0181,  0.50,    95.39
+0.36,  10.0,   0.11,    3.00,   215.90
+0.50,  14.0,   0.22,    6.00,   294.46
+2.00,  55.4,   1.50,   41.50,   903.08
+5.00, 138.4,   3.50,   96.90,  1439.14
+END_TABLE2
+
+
+[PIPE 1 inch]
+vendor      = Parker Hannifin
+date        = 1996-06-12
+ehd      = 31
+id_mm       = 31*25.4/32 #25.4
+# Note on sheet: EHD field reads "31 (32,11)" - the parenthetical 32.11 has NO
+# units written on the sheet (it is a refined EHD value, not millimetres)
+lengths_ft  = 30, 50, 80, 100, 150, 200, 250
+
+TABLE1
+# inlet_psi, inlet_inWC, drop_psi, drop_inWC, 30ft, 50ft, 80ft, 100ft, 150ft, 200ft, 250ft
+# Note: dash (—) indicates flow not measured at that condition/length
+0.25,   7.0,   0.0181,  0.50,   232.8,  179.8,  142.5,  129.6,  108.8,   99.7,   90.8
+0.36,  10.0,   0.11,    3.00,   557.4,  438.8,  346.6,  311.1,  258.6,  223.3,  201.1
+0.50,  14.0,   0.22,    6.00,   824.3,  662.2,  543.4,  483.6,  353.4,  369.7,  285.7
+2.00,  55.4,   1.50,   41.50,  2078.8, 1662.1, 1354.1, 1256.7, 1050.0,  927.5,  815.2
+5.00, 138.4,   3.50,   96.90,     NaN,    NaN,  2220.3, 1933.3, 1717.9, 1500.3, 1223.7
+END_TABLE1
+
+TABLE2
+# inlet_psi, inlet_inWC, drop_psi, drop_inWC, flow_scfh
+0.25,   7.0,   0.0181,  0.50,   245.14
+0.36,  10.0,   0.11,    3.00,   575.20
+0.50,  14.0,   0.22,    6.00,   840.80
+2.00,  55.4,   1.50,   41.50,  2192.70
+5.00, 138.4,   3.50,   96.90,     NaN
+END_TABLE2
